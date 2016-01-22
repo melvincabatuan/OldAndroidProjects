@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    tools:context=".Auto_grader" >
+
+    <!--
+    We are using a RelativeLayout.Say our button order is A,B,C. Button B has android:layout_centerInParent="true". 
+    Button A has android:layout_centerHorizontal="true", android:layout_above="@id/Button02", 
+    and some android:layout_marginBottom to establish whatever whitespace gap you want. 
+    Button C has android:layout_centerHorizontal="true", android:layout_below="@id/Button02", 
+    and some android:layout_marginTop to establish whatever whitespace gap you want.
+    -->
+
+    <Button
+        android:id="@+id/btnComputeAnswer"
+        android:layout_width="225dip"
+        android:layout_height="70dip"
+        android:layout_centerInParent="true"
+        android:text="@string/btnComputeAnswer"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/btnReference"
+        android:layout_width="225dip"
+        android:layout_height="70dip"
+        android:layout_above="@id/btnComputeAnswer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dip"
+        android:text="@string/btnReference"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/btnViewAnswers"
+        android:layout_width="225dip"
+        android:layout_height="70dip"
+        android:layout_below="@id/btnComputeAnswer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dip"
+        android:text="@string/btnViewAnswers"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+    
+    <TextView
+        android:id="@+id/textViewProcessingMsg"
+        android:layout_width="225dip"
+        android:layout_height="70dip"
+        android:layout_below="@id/btnViewAnswers"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dip"
+        android:gravity="center"
+        android:text="@string/inProcessMessage"
+        android:textSize="24sp"
+        android:textStyle="normal" />
+
+</RelativeLayout>

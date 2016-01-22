@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Auto Grade Answer Sheet</string>
+    <string name="action_settings">Settings</string>
+    <string name="cannot">cannot</string>
+    <string name="btnReference">Capture Reference Answer Sheet</string>
+    <string name="btnComputeAnswer">Capture Student Answer Sheet</string>
+    <string name="btnViewAnswers">View Result</string>    
+    <string name="album_name">omr</string>
+    <string name="choiceA">A</string>
+    <string name="choiceB">B</string>
+    <string name="choiceC">C</string>
+    <string name="choiceD">D</string>
+    <string name="empty"></string>
+	<string name="desc"></string>
+	<string name="question_num">0</string>
+	<string name="score">Your Score : 0/0</string>
+	<string name="inProcessMessage"></string>
+</resources>

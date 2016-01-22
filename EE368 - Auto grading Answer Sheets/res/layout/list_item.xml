@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/question_num"
+        android:layout_width="fill_parent"
+        android:layout_height="24dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="@string/question_num"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/choice_a"
+        android:layout_width="fill_parent"
+        android:layout_height="24dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="@string/choiceA"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/choice_b"
+        android:layout_width="fill_parent"
+        android:layout_height="24dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="@string/choiceB"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/choice_c"
+        android:layout_width="fill_parent"
+        android:layout_height="24dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="@string/choiceC"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/choice_d"
+        android:layout_width="fill_parent"
+        android:layout_height="24dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="@string/choiceD"
+        android:textColor="#000000" />
+
+</LinearLayout>

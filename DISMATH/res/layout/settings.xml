@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="fill"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ImageButton_Avatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="@dimen/avatar_size"
+                    android:minHeight="@dimen/avatar_size"
+                    android:onClick="onLaunchCamera"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/avatar" >
+                </ImageButton>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView_Nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_nickname"
+                        android:textSize="@dimen/help_text_size"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/EditText_Nickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:maxLength="20"
+                        android:maxLines="1" >
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextView_Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_email"
+                android:textSize="@dimen/help_text_size"
+                android:textStyle="bold" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditText_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:maxLines="1" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TextView_Password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_password"
+                android:textSize="@dimen/help_text_size"
+                android:textStyle="bold" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/Button_Password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onSetPasswordButtonClick"
+                    android:text="@string/settings_button_pwd" >
+                </Button>
+
+                <TextView
+                    android:id="@+id/TextView_Password_Info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/help_text_size"
+                    android:textStyle="bold" >
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextView_DOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_dob"
+                android:textSize="@dimen/help_text_size"
+                android:textStyle="bold" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/Button_DOB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onPickDateButtonClick"
+                    android:text="@string/settings_button_dob" >
+                </Button>
+
+                <TextView
+                    android:id="@+id/TextView_DOB_Info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/help_text_size"
+                    android:textStyle="bold" >
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextView_Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_gender"
+                android:textSize="@dimen/help_text_size"
+                android:textStyle="bold" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/Spinner_Gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/genders" >
+            </Spinner>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

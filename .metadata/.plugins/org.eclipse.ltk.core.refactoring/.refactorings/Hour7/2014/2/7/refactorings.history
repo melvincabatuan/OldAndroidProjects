@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;Hour7&apos;&#x0A;- Original project: &apos;Hour7&apos;&#x0A;- Original element: &apos;Hour7/src/com.androidbook.btdt.hour7&apos;" description="Delete element" element1="/src&lt;com.androidbook.btdt.hour7" element2="/src&lt;com.androidbook.btdt" element3="/src&lt;com.androidbook" element4="/src&lt;com" elements="4" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1392201247022" subPackages="false" version="1.0"/>
+</session>

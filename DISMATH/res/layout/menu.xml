@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkgrnd">
+        
+    <ListView
+        android:layout_height="wrap_content"
+        android:id="@+id/ListView_Menu"
+        android:layout_width="match_parent"
+        android:divider="@drawable/divider"
+        android:listSelector="@drawable/selector"
+        android:padding="50dp" 
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/RelativeLayout01"></ListView>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|center_horizontal" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="top|center"
+            android:shadowColor="@color/green_light"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:text="@string/app_logo_top"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/screen_title_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

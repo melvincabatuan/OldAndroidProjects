@@ -1,0 +1,7 @@
+
+**** Build of configuration Default for project Cartoonifier ****
+
+sh /ndk-build all 
+sh: 0: Can't open /ndk-build
+
+**** Build Finished ****

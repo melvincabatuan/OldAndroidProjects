@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="org.opencv.samples.tutorial2"
+      android:versionCode="21"
+      android:versionName="2.1">
+      
+    <uses-sdk android:targetSdkVersion="17" android:maxSdkVersion="17"  android:minSdkVersion="8" />
+    
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <supports-screens android:resizeable="true"
+                      android:smallScreens="true" 
+                      android:normalScreens="true" 
+                      android:largeScreens="true" 
+                      android:anyDensity="true" />
+
+    <application android:label="@string/app_name" android:allowBackup="true" android:icon="@drawable/icon">
+        
+         <activity
+            android:name="org.opencv.samples.tutorial2.Auto_grader"
+            android:label="@string/app_name" >
+              <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+           
+        </activity>
+
+        <activity
+            android:name="org.opencv.samples.tutorial2.ViewAnswerActivity"
+            android:label="@string/app_name" >           
+        </activity>
+        
+        <activity android:name="Sample2NativeCamera"
+                  android:label="@string/app_name"
+                  android:screenOrientation="landscape"
+                  android:configChanges="keyboardHidden|orientation">                            
+        </activity>
+        
+        <activity android:name="org.opencv.samples.tutorial2.ViewImageActivity"
+                  android:label="@string/app_name">
+              
+        </activity>
+       
+    </application>
+
+</manifest> 
